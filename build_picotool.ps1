@@ -32,7 +32,7 @@ if ($IsWindows -or $ENV:OS) {
     cmake -DCMAKE_BUILD_TYPE=Release -G "NMake Makefiles" ..
     nmake
     
-    Copy-Item "picotool.exe"  -Destination "..\..\..\picotool"
+    Copy-Item "picotool.exe"  -Destination "..\..\..\"
 }
 else {
     cmake -DCMAKE_BUILD_TYPE=Release ..
